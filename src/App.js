@@ -22,7 +22,7 @@ const animeData = {
         "A psychic middle school boy tries to live a normal life and keep his growing powers under control, even though he constantly gets into trouble."
     }
   ],
-  adventure: [
+  action: [
     {
       name: "Attack on Titan",
       rating: 8.8,
@@ -47,11 +47,37 @@ const animeData = {
       desc:
         "A superhero-loving boy without any powers is determined to enroll in a prestigious hero academy and learn what it really means to be a hero."
     }
+  ],
+  "sci-fi": [
+    {
+      name: "Cowboy Bebop",
+      rating: 8.9,
+      desc:
+        "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners."
+    },
+    {
+      name: "Planetes ",
+      rating: 8.2,
+      desc:
+        "In the year 2075, mankind has reached a point where journeying between Earth, the moon and the space stations is part of daily life."
+    },
+    {
+      name: "Steins;Gate",
+      rating: 8.8,
+      desc:
+        "After discovering time travel, a university student and his colleagues must use their knowledge of it to stop an evil organization and their diabolical plans."
+    },
+    {
+      name: "Dr.Stone",
+      rating: 8.2,
+      desc:
+        "Awakened into a world where humanity has been petrified, scientific genius Senku and his brawny friend Taiju use their skills to rebuild civilization."
+    }
   ]
 };
 
 export default function App() {
-  const [animeGenre, setAnimeGenre] = useState("adventure");
+  const [animeGenre, setAnimeGenre] = useState("action");
 
   function animeList(item) {
     setAnimeGenre(item);
@@ -77,14 +103,14 @@ export default function App() {
         })}
       </div>
       <hr></hr>
-      <div>
+      <div className="animeList">
         <ul>
           {animeData[animeGenre].map((anime) => {
             return (
               <li key={anime.name}>
-                <div> {anime.name} </div>
-                <div> {anime.rating} </div>
-                <div> {anime.desc} </div>
+                <div className="name"> {anime.name} </div>
+                <small className="rating"> {anime.rating}/10 </small>
+                <div className="desc"> {anime.desc} </div>
               </li>
             );
           })}
