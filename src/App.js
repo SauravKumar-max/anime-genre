@@ -87,7 +87,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Anime Genre</h1>
+      <h1>goodAnime</h1>
       <p> List of all genre of anime shows</p>
       <div className="genre">
         {animeDataArray.map((item) => {
