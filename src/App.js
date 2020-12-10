@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 const animeData = {
@@ -50,13 +50,14 @@ const animeData = {
   ]
 };
 
-const animeDataArray = Object.keys(animeData);
-console.log(animeDataArray);
-
 export default function App() {
+  const [animeGenre, setAnimeGenre] = useState("adventure");
+
   function animeList(item) {
-    console.log(item);
+    setAnimeGenre(item);
   }
+
+  const animeDataArray = Object.keys(animeData);
 
   return (
     <div className="App">
@@ -76,7 +77,19 @@ export default function App() {
         })}
       </div>
       <hr></hr>
-      {}
+      <div>
+        <ul>
+          {animeData[animeGenre].map((anime) => {
+            return (
+              <li key={anime.name}>
+                <div> {anime.name} </div>
+                <div> {anime.rating} </div>
+                <div> {anime.desc} </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
