@@ -2,3 +2,18 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.genre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genreBtn {
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 1px #000;
+}
