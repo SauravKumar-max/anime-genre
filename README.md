@@ -1,2 +1,2 @@
-# GoodAnime
-### A list of different genre of anime shows.
+# anime-genre
+Created with CodeSandbox
