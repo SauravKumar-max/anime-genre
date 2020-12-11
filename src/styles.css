@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #d6e7f3;
+  background: #e50914;
 }
 
 .App {
@@ -17,10 +17,12 @@ body {
 
 h1 {
   padding: 0.5rem 1rem;
+  color: #fff;
 }
 
 .App p {
   margin: 0 0 0.5rem 1rem;
+  color: #fff;
 }
 
 hr {
@@ -32,11 +34,16 @@ hr {
   margin: 0.5rem 0 0 1rem;
   border-radius: 0.3rem;
   outline: none;
-  border: solid 1px #000;
+  border: solid 1px #fff;
   font-size: 0.9rem;
-  background: #ecf7ff;
+  background: #fff;
   font-weight: bold;
-  box-shadow: 2px 4px 8px #000;
+  color: #e50914;
+}
+
+.genreBtn:hover {
+  background: #e50914;
+  color: #fff;
 }
 
 .animeList ul {
@@ -46,11 +53,13 @@ hr {
 .animeList li {
   width: 80%;
   margin: 1rem;
-  border: solid 1px #000;
+  border: solid 1px #fff;
   padding: 0.8rem 2rem 1rem 1rem;
   border-radius: 0.5rem;
-  background: #ecf7ff;
-  box-shadow: 4px 4px 8px #000;
+  /* background: #ecf7ff; */
+  /* box-shadow: 4px 4px 8px #000; */
+  color: #000;
+  background: #fff;
 }
 
 .name {
@@ -60,8 +69,10 @@ hr {
 
 .rating {
   padding-left: 0.3rem;
+  font-weight: bold;
 }
 
 .desc {
   padding-top: 0.5rem;
+  font-weight: bold;
 }
