@@ -1,2 +1,2 @@
-# anime-genre
+# GOODANIME
 Created with CodeSandbox
